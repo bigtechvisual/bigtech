@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big T’ech | Link na Bio</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS Personalizados -->
+    <style>
+        /* 
+        ========================================
+        CONFIGURAÇÕES GERAIS E CORES
+        ========================================
+        */
+        :root {
+            --bg-color: #121212; /* Preto Carvão */
+            --primary-color: #00FF99; /* Verde Neon */
+            --secondary-color: #19C3FF; /* Azul Tech */
+            --text-color: #F3F3F3; /* Branco Gelo */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 
+        ========================================
+        CONTAINER PRINCIPAL
+        ========================================
+        */
+        .link-container {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 
+        ========================================
+        HEADER E TÍTULOS
+        ========================================
+        */
+        .brand-logo {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .brand-logo .highlight {
+            color: var(--primary-color);
+            text-shadow: 
+                0 0 5px var(--primary-color),
+                0 0 10px var(--primary-color),
+                0 0 15px rgba(0, 255, 153, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-color);
+            opacity: 0.9;
+            margin-bottom: 2.5rem;
+        }
+
+        /* 
+        ========================================
+        BOTÕES DE AÇÃO COM EFEITO NEON
+        ========================================
+        */
+        .btn-neon {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--text-color);
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn-neon:hover {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            box-shadow: 
+                0 0 10px var(--primary-color),
+                0 0 20px var(--primary-color),
+                0 0 40px rgba(0, 255, 153, 0.7);
+            transform: translateY(-3px);
+        }
+
+        .btn-neon i {
+            font-size: 1.2rem;
+            margin-right: 12px;
+            width: 20px; /* Alinha o texto mesmo com ícones diferentes */
+        }
+        
+        /* 
+        ========================================
+        SEÇÃO DE APRESENTAÇÃO E RODAPÉ
+        ========================================
+        */
+        .about-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer {
+            font-size: 0.8rem;
+            color: var(--text-color);
+            opacity: 0.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="link-container">
+        
+        <!-- ==================== HEADER ==================== -->
+        <header>
+            <h1 class="brand-logo">Big <span class="highlight">T’ech</span></h1>
+            <p class="tagline">Visual com DNA digital</p>
+        </header>
+
+        <!-- ==================== BOTÕES DE LINKS ==================== -->
+        <main>
+            <a href="#whatsapp-link" class="btn btn-neon" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+            <a href="#instagram-link" class="btn btn-neon" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="#portfolio-link" class="btn btn-neon" target="_blank">
+                <i class="fas fa-globe"></i>
+                Portfólio
+            </a>
+        </main>
+
+        <!-- ==================== BLOCO DE APRESENTAÇÃO ==================== -->
+        <section>
+            <p class="about-text">
+                A Big T’ech cria identidade visual, logos e páginas expressas para quem quer sair do básico com visual moderno e entrega rápida.
+            </p>
+        </section>
+
+        <!-- ==================== RODAPÉ ==================== -->
+        <footer class="footer">
+            <p>© Big T’ech 2025 · Todos os direitos reservados</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
